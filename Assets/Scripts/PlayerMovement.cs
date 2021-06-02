@@ -30,11 +30,10 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            m_rigidbody2D.velocity += new Vector2(0, 8.5f);
+            m_rigidbody2D.velocity += new Vector2(0, 5f);
 
         }
 
 
     }
-}
 }
