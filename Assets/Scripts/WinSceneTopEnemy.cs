@@ -23,7 +23,7 @@ public class WinSceneTopEnemy : MonoBehaviour
        
         if (collision.gameObject.CompareTag("hero") && FindObjectOfType<WinSceneBottomEnemy>().amCollided == true)
         {
-            Debug.Log("tHE LEVEL was cCompleteD");
+           // Debug.Log("tHE LEVEL was cCompleteD");
             
             SceneManager.LoadScene(goTo);
         }

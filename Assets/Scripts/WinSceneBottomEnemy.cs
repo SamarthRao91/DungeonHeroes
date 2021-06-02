@@ -24,12 +24,12 @@ public class WinSceneBottomEnemy : MonoBehaviour
         if (collision.gameObject.CompareTag("hero"))
         {
             amCollided = true;
-            Debug.Log("true");
+           // Debug.Log("true");
         }
         else
         {
             amCollided = false;
-            Debug.Log(false);
+           // Debug.Log(false);
         }
     }
 }
