@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour
     Transform m_Transform;
     Rigidbody2D m_rigidbody2D;
 
+    public Joystick joystick;
+    float horizontalMove = 0f;
+    public float playerSpeed = 40f;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,21 +21,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            m_Transform.position += new Vector3(-3 * Time.deltaTime, 0, 0);
+        horizontalMove =  joystick.Horizontal *playerSpeed;
 
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            m_Transform.position += new Vector3(3 * Time.deltaTime, 0, 0);
-
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            m_rigidbody2D.velocity += new Vector2(0, 5f);
-
-        }
+        m_rigidbody2D.AddForce(new Vector2(horizontalMove, 0f));
 
 
     }
