@@ -11,8 +11,11 @@ public class Jump : MonoBehaviour
     // Start is called before the first frame update
    public void DoJump()
     {
-       
-        player.GetComponent<Rigidbody2D>().velocity += new Vector2(0, 5f);
-        player1.GetComponent<Rigidbody2D>().velocity += new Vector2(0, 5f);
+       if(FindObjectOfType<TopEnememyGroundChecker>().topChecker == true && FindObjectOfType<BottomEnemyGroundChecker>().bottomChecker == true)
+        {
+            player.GetComponent<Rigidbody2D>().velocity += new Vector2(0, 5f);
+            player1.GetComponent<Rigidbody2D>().velocity += new Vector2(0, 5f);
+        }
+        
     }
 }

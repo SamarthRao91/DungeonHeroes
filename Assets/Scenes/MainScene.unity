@@ -2849,6 +2849,7 @@ GameObject:
   - component: {fileID: 1772873837}
   - component: {fileID: 1772873836}
   - component: {fileID: 1772873838}
+  - component: {fileID: 1772873839}
   m_Layer: 0
   m_Name: TopEnemy
   m_TagString: enemy
@@ -3007,6 +3008,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goTo: LevelCompleteScene
+--- !u!114 &1772873839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772873831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b1e02b7659238644ba9b7289efb7a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topChecker: 0
 --- !u!1 &1828010236
 GameObject:
   m_ObjectHideFlags: 0
@@ -3250,7 +3264,7 @@ GameObject:
   - component: {fileID: 1877010252}
   m_Layer: 0
   m_Name: New Grass Platform (2)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3576,6 +3590,7 @@ GameObject:
   - component: {fileID: 2081164809}
   - component: {fileID: 2081164808}
   - component: {fileID: 2081164807}
+  - component: {fileID: 2081164810}
   m_Layer: 0
   m_Name: BottomEnemy
   m_TagString: enemy
@@ -3734,6 +3749,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 856474290}
   playerSpeed: 2
+--- !u!114 &2081164810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081164802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635fbbdba17545b4cb1e5ef8f653f907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomChecker: 0
 --- !u!1 &2127547789
 GameObject:
   m_ObjectHideFlags: 0
